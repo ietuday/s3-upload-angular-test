@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd /home/ubuntu/s3-upload-angular-test
-if [ -d dist ]
+if [ -d dist ] 
 then
     aws s3 cp ./dist/ --recursive s3://test-bucket/web/ --acl public-read
 else
