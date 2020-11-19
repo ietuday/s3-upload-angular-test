@@ -8,4 +8,4 @@ nvm install v14.15.0
 node -v
 npm install -g @angular/cli
 ng --version
-ng build --prod
+npm run build
