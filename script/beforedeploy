@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cd /home/uday1/projects/pems
+ssh -i "woe-new-4.pem" ubuntu@ec2-35-178-113-52.eu-west-2.compute.amazonaws.com
+sudo chmod 777 /var/www/html /var/www/html/*
+sudo rm -rf /var/www/html/*

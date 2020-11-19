@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd /home/uday1/projects/s3-upload-angular-test
+git pull origin master
+git add .
+git commit -m "changes"
+git push origin master

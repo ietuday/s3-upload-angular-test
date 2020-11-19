@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
-cd /home/ubuntu/s3-upload-angular-test
-git pull origin master 
-ls
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh | bash
-. ~/.nvm/nvm.sh
-nvm install v14.15.0
-node -v
-npm install -g @angular/cli
-ng --version
-npm run build
+
+cd /home/uday1/projects/s3-upload-angular-test
+npm install
+ng build --prod
+scp -r -i /home/uday1/projects/pems/woe-new-4.pem ./dist/s3-upload-angular-test/* ubuntu@ec2-35-178-113-52.eu-west-2.compute.amazonaws.com:/var/www/html/
